@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="author" content="NTU CSIE Information System Training Course">
+	<meta name="keywords" content="Keyword 1,Keyword 2">
+	<meta name="description" content="description">
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" href="/favicon.png">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<script src="game.js"></script>
+	<title>title</title>
+	<style>
+		.main {
+			margin-top: 100px;
+			text-align: center;
+		}
+
+	</style>
+</head>
+
+<body>
+	<nav class="nav navbar-inverse">
+		<div class="container">
+			<a href=../index.html class="navbar-brand">My Web</a>
+			<div class="navbar-header">
+				<button class="navbar-toggle" data-toggle="collapse" data-target="#navbar1">
+					<i class="icon-bar"></i>
+					<i class="icon-bar"></i>
+					<i class="icon-bar"></i>
+				</button>
+			</div>
+			<div id="navbar1" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a data-toggle="tab" href="../food/index.html">食記:江原慶白菜韓國料理</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="main">
+		<img id="sceneimg" src="scene0.png" alt="火柴人歡迎畫面">
+		<p>請選擇1或2:</p>
+		<input type="button" id="decision1" value="1" onclick="changeScene(1)">
+		<input type="button" id="decision2" value="2" onclick="changeScene(2)">
+	</div>
+</body>
+
+</html>
